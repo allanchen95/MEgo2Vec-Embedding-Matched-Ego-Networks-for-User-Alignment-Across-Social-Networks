@@ -53,25 +53,13 @@ def main():
     pairs = np.asarray(pickle.load(open(pairs_path, "rb")))
 
     
-    network = np.asarray(pickle.load(open(FLAGS.network_path, "rb")))
-    print "network:",len(network)
+    #network = np.asarray(pickle.load(open(FLAGS.network_path, "rb")))
+    #print "network:",len(network)
     
     
     test_network = np.asarray(pickle.load(open(FLAGS.test_network_path, "rb")))
 
     train_network = np.asarray(pickle.load(open(FLAGS.train_network_path, "rb")))
-
-    train_t = np.asarray(map(lambda x: x[0], train_network))
-    test_t = np.asarray(map(lambda x: x[0], test_network))
-
-    total_t = np.asarray(map(lambda x: x[0], network))
-
-    for i in train_t:
-        if i not in total_t:
-            print "sb"
-    for i in test_t:
-        if i not in total_t:
-            print "sb"
     
     vocabulary_path = dir + "/vocabulary.p"
     vocabulary = pickle.load(open(vocabulary_path, "rb"))
@@ -92,7 +80,7 @@ def main():
     pub = cut_len(raw_features[:,3], 1000,0)
     print "cut completed!"
 
-    
+    '''
     data_size = len(network)
     ind = np.random.permutation(data_size)
 
@@ -109,7 +97,7 @@ def main():
     #pickle.dump(train_network, open("train_network.p", "wb"))
     #pickle.dump(test_network, open("test_network.p", "wb"))
     #valid_data = network[valid_indices]
-    
+    '''
     print "train",len(train_network)
     print "test",len(test_network)
     
