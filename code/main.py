@@ -12,10 +12,10 @@ def main():
 
     # Data loading params
     tf.flags.DEFINE_float("test_sample_percentage", 0.2 , "Percentage of the test data")
-    tf.flags.DEFINE_string("data_dir", "../data_new", "Data source")
-    tf.flags.DEFINE_string("network_path", "../data_new/network_A.p", "Whole_network")  
-    tf.flags.DEFINE_string("train_network_path", "../relation-att/train_network.p", "Train_network")
-    tf.flags.DEFINE_string("test_network_path", "../relation-att/test_network.p", "Test_network")      
+    tf.flags.DEFINE_string("data_dir", "../data", "Data source")
+    tf.flags.DEFINE_string("network_path", "../data/network_A.p", "Whole_network")  
+    tf.flags.DEFINE_string("train_network_path", "../data/train_network.p", "Train_network")
+    tf.flags.DEFINE_string("test_network_path", "../data/test_network.p", "Test_network")      
 
     # Model Hyperparameters
     tf.flags.DEFINE_integer("max_neighbor_size", 14, "Max neighbor num for one instance (default: 14)")
