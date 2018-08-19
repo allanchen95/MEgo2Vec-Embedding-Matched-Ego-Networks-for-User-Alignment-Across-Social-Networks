@@ -134,7 +134,7 @@ def main():
             
             model.train(sess,num_epochs = FLAGS.num_epochs, lr_init=FLAGS.learning_rate, max_decay_epoch = FLAGS.max_decay_epoch, dropout_keep_prob = FLAGS.dropout_keep_prob, evaluate_every = FLAGS.evaluate_every)
             '''            
-            ckpt = tf.train.get_checkpoint_state('/home/ubuntu/daniel/mgan/aminer-linkedin/all-att/checkpoints_cikm/')
+            ckpt = tf.train.get_checkpoint_state('../checkpoints/')
             if ckpt and ckpt.model_checkpoint_path:
             	print ckpt.model_checkpoint_path
             	model.saver.restore(sess, ckpt.model_checkpoint_path)
