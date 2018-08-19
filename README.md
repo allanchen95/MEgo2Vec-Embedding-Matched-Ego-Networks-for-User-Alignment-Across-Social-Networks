@@ -1,8 +1,8 @@
 ## MEgo2Vec: Embedding Matched Ego Networks for User Alignment Across Social Networks∗
-============
+======
 This is basic implementation of our CIKM'18 paper:
-
-Jing Zhang, Bo Chen, Xianming Wang, Hong Chen*, Cuiping Li, Fengmei Jin, Guojie Song, and Yutao Zhang. 2018. MEgo2Vec: Embedding Matched Ego Networks for User Alignment Across Social Networks. In Proceedings of ACM conference (CIKM’18). ACM, New York, NY, USA, Article 4, 10 pages.
+======
+Jing Zhang, Bo Chen, Xianming Wang, Hong Chen*, Cuiping Li, Fengmei Jin, Guojie Song, and Yutao Zhang. 2018. MEgo2Vec: Embedding Matched Ego Networks for User Alignment Across Social Networks. In Proceedings of ACM conference (CIKM’18).
 
 ## Requirements
 - Ubuntu 16.04
