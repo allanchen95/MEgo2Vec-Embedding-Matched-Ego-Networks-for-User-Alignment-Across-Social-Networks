@@ -115,7 +115,7 @@ def main():
         sess = tf.Session(config=tf_config)
         with sess.as_default():
             # with tf.device('/cpu:0'):
-            model = cnn.textBiLSTM(train_set = train,
+            model = cnn.MEgo2vec(train_set = train,
                                    test_set = test,
                                    num_classes = FLAGS.class_num,
                                    word_vocab_size = len(vocabulary),

@@ -6,7 +6,7 @@ from text_cnn import TextCNN
 from Utils import *
 import os
 np.set_printoptions(threshold=np.inf)
-class textBiLSTM(object):
+class MEgo2vec(object):
     def __init__(self, train_set, test_set, num_classes, word_vocab_size,
                  word_embedd_dim, char_vocab_size, char_embedd_dim, l2_reg_lambda, max_neighbor_size, first_num_filters, first_filter_size, second_num_filters ,second_filter_size, n_hidden):
         '''
@@ -619,9 +619,6 @@ class textBiLSTM(object):
         return y_true, prob_pred
 
     def train(self, session, num_epochs, lr_init, max_decay_epoch, dropout_keep_prob, evaluate_every):
-        # print('write graph begin')
-        # tf.train.write_graph(session.graph_def, self.graph_save_dir, 'simple_dynamic_lstm.pb', as_text=True)
-        # print('write graph end')
 
         batch_count = self.train_set.batch_count
         print "batch count = ", batch_count
