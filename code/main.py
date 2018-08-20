@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-import cnn_network as cnn
+import MEgo2vec as mego2vec
 import os
 from DatasetProcessor import *
 import cPickle as pickle
@@ -115,7 +115,7 @@ def main():
         sess = tf.Session(config=tf_config)
         with sess.as_default():
             # with tf.device('/cpu:0'):
-            model = cnn.MEgo2vec(train_set = train,
+            model = mego2vec.MEgo2vec(train_set = train,
                                    test_set = test,
                                    num_classes = FLAGS.class_num,
                                    word_vocab_size = len(vocabulary),
