@@ -13,7 +13,8 @@ Jing Zhang, Bo Chen, Xianming Wang, Hong Chen*, Cuiping Li, Fengmei Jin, Guojie 
 Note: Running this project will consume upwards of 20GB hard disk space. The overall pipeline will take several hours. You are recommended to run this project on a Linux server.
 
 ## Data Description
-Training data in this demo are in the _data_ directory. If you want to download the original network data (AMiner, Linkedin), please click [here](). 
+Training data in this demo is about AMiner - Linkedin networks which is placed in the _data_ directory. If you want to download the original network data (AMiner, Linkedin), please use the link : https://pan.baidu.com/s/1b6_8jd8J9CGiCpyFBfZgoQ  密码:xacn .
+If you want to get other networks (Twitter, MySpace LastFm...), please click the [link](https://www.aminer.cn/cosnet)
 
 ## How to run
 ```bash
